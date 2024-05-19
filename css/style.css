@@ -1,0 +1,849 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-gray {
+    background-color: #f7f7f7;
+}
+
+:root {
+    --mytext: rgb(52, 52, 52);
+    --mainGray: rgb(116, 129, 130);
+    --gray2: rgb(153, 153, 153);
+}
+
+.section-title h3 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--mytext);
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.section-title h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+/* navbar */
+
+.navbar {
+    transition: all .5s ease;
+}
+
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    transition: all .5s ease;
+}
+
+.navbar-toggler {
+    text-decoration: none;
+    color: #fff;
+    outline: 0;
+    border: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: unset;
+}
+nav li{
+    display: inline-block;
+}
+.nav-scroll .navbar-toggler{
+    color: var(--mytext);
+}
+.nav-link {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.nav-scroll .nav-link:focus,
+.nav-scroll .nav-link:hover {
+    color: var(--mytext);
+}
+
+.navbar-nav .nav-link.active {
+    transition: all .5s ease;
+    color: white;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 4px;
+    margin: auto;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #fff;
+}
+
+.nav-scroll .navbar-brand:hover,
+.nav-scroll .navbar-brand:focus {
+    color: var(--mytext);
+}
+
+.nav-scroll .nav-link.active::after {
+    background-color: var(--mytext);
+}
+
+.nav-scroll {
+    background-color: #fff;
+    box-shadow: 0px 0px 80px 1px rgba(0, 0, 0, .3);
+}
+
+.nav-scroll .navbar-brand {
+    color: var(--mytext);
+}
+
+.nav-scroll .nav-link {
+    color: var(--mytext);
+}
+
+.nav-scroll .nav-link.active {
+    color: var(--mytext);
+}
+
+/* end navbar */
+
+/* header */
+
+#Home {
+    background-image: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .6)), url('../imgs/bg.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    overflow: hidden;
+}
+
+.header-content {
+    height: 90%;
+}
+
+.header-content h5 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header-content h1 span {
+    font-size: 60px;
+}
+
+.header-content h1 .fixed-text {
+    font-weight: 200;
+}
+
+.header-content h1 .animation::after {
+    content: '';
+    font-weight: 400;
+    animation: typing 8s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    1% {
+        content: "L";
+    }
+
+    2% {
+        content: "La";
+    }
+
+    3% {
+        content: "Lar";
+    }
+
+    4% {
+        content: "Larr";
+    }
+
+    5% {
+        content: "Larry";
+    }
+
+    6% {
+        content: "Larry ";
+    }
+
+    7% {
+        content: "Larry D";
+    }
+
+    8% {
+        content: "Larry Da";
+    }
+
+    9% {
+        content: "Larry Dan";
+    }
+
+    10% {
+        content: "Larry Dani";
+    }
+
+    11% {
+        content: "Larry Danie";
+    }
+
+    12% {
+        content: "Larry Daniel";
+    }
+
+    13% {
+        content: "Larry Daniels";
+    }
+
+    24% {
+        content: "Larry Daniels";
+    }
+
+    25% {
+        content: "Larry Daniel";
+    }
+
+    26% {
+        content: "Larry Danie";
+    }
+
+    27% {
+        content: "Larry Dani";
+    }
+
+    28% {
+        content: "Larry Dan";
+    }
+
+    29% {
+        content: "Larry Da";
+    }
+
+    30% {
+        content: "Larry D";
+    }
+
+    31% {
+        content: "Larry ";
+    }
+
+    32% {
+        content: "Larry";
+    }
+
+    33% {
+        content: "Larr";
+    }
+
+    34% {
+        content: "Lar";
+    }
+
+    35% {
+        content: "La";
+    }
+
+    36% {
+        content: "L";
+    }
+
+    37% {
+        content: "";
+    }
+
+    39% {
+        content: "";
+    }
+
+    40% {
+        content: "D";
+    }
+
+    41% {
+        content: "De";
+    }
+
+    42% {
+        content: "Dev";
+    }
+
+    43% {
+        content: "Deve";
+    }
+
+    44% {
+        content: "Devel";
+    }
+
+    45% {
+        content: "Develo";
+    }
+
+    46% {
+        content: "Develop";
+    }
+
+    47% {
+        content: "Develope";
+    }
+
+    48% {
+        content: "Developer";
+    }
+
+    59% {
+        content: "Developer";
+    }
+
+    60% {
+        content: "Develope";
+    }
+
+    61% {
+        content: "Develop";
+    }
+
+    62% {
+        content: "Develo";
+    }
+
+    63% {
+        content: "Devel";
+    }
+
+    64% {
+        content: "Deve";
+    }
+
+    65% {
+        content: "Dev";
+    }
+
+    66% {
+        content: "De";
+    }
+
+    67% {
+        content: "D";
+    }
+
+    68% {
+        content: "";
+    }
+
+    70% {
+        content: "";
+    }
+
+    71% {
+        content: "D";
+    }
+
+    72% {
+        content: "De";
+    }
+
+    73% {
+        content: "Des";
+    }
+
+    74% {
+        content: "Desi";
+    }
+
+    75% {
+        content: "Desig";
+    }
+
+    76% {
+        content: "Design";
+    }
+
+    77% {
+        content: "Designe";
+    }
+
+    78% {
+        content: "Designer";
+    }
+
+    89% {
+        content: "Designer";
+    }
+
+    90% {
+        content: "Designe";
+    }
+
+    91% {
+        content: "Design";
+    }
+
+    92% {
+        content: "Desig";
+    }
+
+    93% {
+        content: "Desi";
+    }
+
+    94% {
+        content: "Des";
+    }
+
+    95% {
+        content: "De";
+    }
+
+    96% {
+        content: "D";
+    }
+
+    97% {
+        content: "";
+    }
+}
+
+.icons i {
+    font-size: 14px;
+}
+
+.icons span {
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end header */
+
+/* About */
+#About .image .box {
+    position: relative;
+}
+
+#About .image .box::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#About h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--mytext);
+}
+
+#About .job {
+    color: var(--gray2);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#About p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mainGray);
+    line-height: 1.8rem;
+}
+
+#About .progress-bar {
+    background-color: rgb(28, 28, 28);
+}
+
+#About .progress-bar span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#About .progress {
+    box-shadow: inset 0px 0px 10px 2px #bbb;
+}
+
+#About .btn {
+    border: 1px solid rgb(28, 28, 28);
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+#About .btn-solid {
+    color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+#About .btn-outline {
+    color: rgb(28, 28, 28);
+    background-color: transparent;
+}
+
+#About .btn-outline:hover {
+    color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+#About .btn-solid:hover {
+    color: rgb(28, 28, 28);
+    background-color: transparent;
+}
+
+/* end About */
+
+/* services */
+
+#Services h6 {
+    color: var(--mytext);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#Services p {
+    color: var(--mainGray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+#Services i {
+    font-size: 30px;
+    color: var(--mytext);
+    transition: .5s;
+}
+
+#Services .icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#Services .box {
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#Services .box:hover .icon {
+    background-color: var(--mytext);
+}
+
+#Services .box:hover i {
+    color: white;
+}
+
+/* end services */
+
+/* works */
+
+#Works .item{
+    position: relative;
+    overflow: hidden;
+}
+
+#Works .overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(10px);
+    z-index: 2;
+}
+
+#Works .overlay h6{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--mytext);
+    letter-spacing: 2px;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+#Works .overlay i{
+    font-size: 12px;
+    color: var(--mytext);
+    transition: .5s;
+}
+#Works .overlay .icon{
+    border: 1px solid var(--mytext);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    transform: translateY(10px);
+}
+#Works .overlay .icon:hover{
+    background-color: var(--mytext);
+}
+#Works .overlay .icon:hover i{
+    color: white;
+}
+#Works .item:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+#Works .item:hover .icon{
+    transform: translateY(0);
+}
+#Works .item:hover h6{
+    transform: translateY(0);
+}
+#Works .nav-link{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--mytext);
+}
+
+#Works .nav-link.active{
+    color: var(--mytext);
+}
+
+/* end works */
+
+
+/* clients */
+
+#Clients .img-box{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#Clients p{
+    color: var(--mainGray);
+    font-size: 15px;
+    font-weight: 400;
+}
+#Clients h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mytext);
+}
+#Clients span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #a7a7a7;
+}
+.carousel-indicators .active{
+    background-color: #888;
+}
+
+/* end clients */
+
+#Counter i{
+    color: var(--mytext);
+    font-size: 30px;
+}
+#Counter h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--mytext);
+}
+#Counter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainGray);
+}
+#Counter span{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* team */
+
+#Team .top{
+    position: relative;
+    overflow: hidden;
+}
+#Team .mycard img{
+    transition: .5s;
+}
+#Team .overlay{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: scale(80%) rotateY(360deg);
+    transition: 1s ease;
+}
+#Team .mycard:hover .overlay{
+    opacity: 1;
+    transform: scale(100%) rotateY(0deg);
+}
+#Team .top:hover img{
+    transform: scale(110%);
+}
+#Team i{
+    color: #fff;
+    font-size: 18px;
+    transition: .5s;
+}
+#Team a{
+    background-color: var(--mytext);
+    transition: .5s;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--mytext);
+    border-radius: 50%;
+}
+#Team a:hover{
+    background-color: transparent;
+}
+#Team a:hover i{
+    color: var(--mytext)
+}
+#Team .bottom{
+    background-color: #5B5B5B;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#Team h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+#Team h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* end team */
+
+/* contact */
+
+#Contact i{
+    color: var(--mytext);
+    font-size: 25px;
+    transition: .5s;
+}
+#Contact h6{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--mytext);
+}
+#Contact p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mainGray);
+}
+#Contact span{
+    height: 60px;
+    width: 60px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s;
+}
+#Contact .icon-box:hover i{
+    color: white;
+}
+#Contact .icon-box:hover span{
+    background-color: var(--mytext);
+}
+#Contact .text-box{
+    background-color: #f4f4f4;
+    border: none;
+}
+#Contact .text-box:focus{
+    background-color: #f4f4f4;
+    box-shadow: unset;
+}
+#Contact .btn{
+    color: #fff;
+    font-size: 13px;
+    background-color: rgb(28, 28, 28);;
+    border: 2px solid rgb(28, 28, 28);;
+    transition: .5;
+}
+#Contact .btn:hover{
+    background-color: transparent;
+    color: rgb(28, 28, 28);
+}
+/* end contact */
+
+/* footer */
+
+footer{
+    background-color: rgb(28, 28, 28);
+}
+footer p{
+    color: var(--mainGray);
+    font-size: 13px;
+}
+
+/* end footer */
